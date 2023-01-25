@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Eel Example</title>
+
+</head>
+<body>
+<h3>Welcome to the WIRES-X ACTIVE NODE ID LIST web-scraper. This program, after asking you a series of questions will find a HAM radio repeater that is nearest to you in your state.</h3>
+
+<p>What measurment system do you use?</p>
+<select id="measurmentSystem">
+  <option>Imperial</option>
+  <option>Metric</option>
+</select>
+<p>Would you like to exclude ones without a frequency? (yes is recommended)</p>
+<select id="excludeFreq">
+  <option>Yes</option>
+  <option>No</option>
+</select>
+
+<h5 id="thing">Do you have access to your coords, if yes type "y", if not type "n". If you do the calculation will be more accurate.</h5>
+<button onclick="getLocation()">Auto</button><button onclick="accessDenied()">Manual</button>  
+<p id="demo"></p>
+<div id="div1">
+  <p id="typeOfCoord"></p> 
+</div>
+
+<div class="random_number"></div>
+<script type="text/javascript" src="../eel.js"></script>
+<script src="./script.js"></script>
+
+<!--<input type="text" id="stateInput" value="Some text..."> 
+-->
+
+  
+<button onclick="main()">Run</button>
+
+<br>
+<div id="picture"></div>
+
+<div class="intro"></div>
+<br>
+<div class="info"></div>
+<div class="info1"></div>
+<div class="info2"></div>
+<div class="info3"></div>
+<div class="info4"></div>
+<div class="info5"></div>
+<div class="info6"></div>
+<div class="info7"></div>
+
+<script src="script.js">
+</script>
+
+</body>
+</html>
